@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog Post</title>
+  <style>
+
+    .blog-post {
+      width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+    }
+
+    .blog-post h1 {
+      margin-bottom: 5px;
+    }
+
+    .author {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+    }
+
+
+    .blog-post p::first-line {
+      font-weight: bold;
+    }
+
+    .blog-post p::first-letter {
+      font-size: 1.8em;
+      color: darkred;
+    }
+
+   
+    blockquote {
+      margin: 15px 0;
+      padding: 10px 15px;
+      background: #f9f9f9;
+      border-left: 4px solid #999;
+      font-style: italic;
+    }
+
+    blockquote::before {
+      content: "“";
+      font-size: 2em;
+      color: #666;
+      margin-right: 5px;
+    }
+
+ 
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .subheadings {
+      display: flex;
+      gap: 20px;
+    }
+
+    .subheadings h4 + h4 {
+      color: green; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blog-post">
+    <h1>My First Blog Post</h1>
+    <div class="author">By Jishnu Shaji</div>
+
+    <p>
+      Welcome to my first blog post! This paragraph demonstrates how the first line is bold and the 
+      first letter is larger and colored. Styling paragraphs can really improve readability.
+    </p>
+
+    <blockquote>
+      Blogging is not about ideas. It’s about making ideas happen.
+    </blockquote>
+
+    <p>
+      For more posts, check out my <a href="#">portfolio</a> and <a href="#">contact page</a>.
+    </p>
+
+    <div class="subheadings">
+      <h4>Introduction</h4>
+      <h4>Highlights</h4>
+    </div>
+  </div>
+
+</body>
+</html>
