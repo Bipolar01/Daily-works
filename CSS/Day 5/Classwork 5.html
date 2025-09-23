@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Web Page</title>
+  <style>
+    /* Section styling */
+    section p::first-line {
+      font-weight: bold; /* First line bold */
+    }
+
+    section p::first-letter {
+      color: red;         /* First letter red */
+      font-size: 1.5em;   /* Larger */
+    }
+
+    /* Container with two headings */
+    .container h3 + h3 {
+      color: green; /* Second h3 using adjacent sibling selector */
+    }
+
+    /* List links */
+    div ul li:first-child a {
+      color: red; /* First link red */
+    }
+
+    a:link {
+      color: blue; /* Normal links */
+    }
+
+    a:visited {
+      color: purple; /* Visited links */
+    }
+
+    a:hover {
+      text-decoration: underline; /* Hover underline */
+    }
+
+    /* Example combinator (descendant selector) */
+    section h2 {
+      text-decoration: underline; /* Style only h2 inside section */
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>About This Page</h2>
+    <p>This is the first paragraph. It demonstrates styling using first-line and first-letter selectors.</p>
+    <p>This is the second paragraph. Notice how the first letter is red and bigger, and the first line is bold.</p>
+  </section>
+
+  <div class="container">
+    <h3>First Heading</h3>
+    <h3>Second Heading</h3>
+  </div>
+
+  <div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
