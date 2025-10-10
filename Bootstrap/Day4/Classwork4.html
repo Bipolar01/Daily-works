@@ -3,9 +3,101 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>FAQ Section</title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        
+        <div class="container my-4">
+            <h1 class="text-center mb-4">FAQ Section</h1>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        How can I reset my password?
+                    </a>
+                </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            To reset your password, click on the "Forgot Password" link on the login page and follow the instructions.
+                        </div>
+                </div>
+            </div>
+        <div class="card">
+                <div class="card-header">
+                    <a class=" collapsed card-link" data-toggle="collapse" href="#collapsetwo">
+                        Where can I track my order?
+                    </div>
+                    </a>
+                    <div id="collapsetwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            You can track your order in the "My Orders" section of your account dashboard.
+                        </div>
+                </div>
+            </div>
+        <div class="card">
+                <div class="card-header">
+                    <a class=" collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        How do I contact customer support?
+                    </a>
+                </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            You can contact customer support via the "Contact Us" page or by calling our support hotline.
+                        </div>
+                </div>
+        </div>
+        </div> <br><br>
+        <h2 class="text-center mb-4">Customer Support</h2>
+        <div class="card-deck">
+            <div class="card">
+            <div class="card-body text-center shadow">
+            <h3>Amrithesh</h3>
+            <p>Senior Support Agent</p>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Quick Actions
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Email</a></li>
+                    <li><a class="dropdown-item" href="#">Call</a></li>
+                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+        </div>
+        </div>
+        </div>       
+        <div class="card">
+            <div class="card-body text-center shadow"> 
+            <h3>Jishnu</h3>
+            <p>Technical Support</p>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Quick Actions
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Email</a></li>
+                    <li><a class="dropdown-item" href="#">Call</a></li>
+                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+        </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="card-body text-center shadow">
+            <h3>Hemand</h3>
+            <p>Customer Service</p>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Quick Actions
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Email</a></li>
+                    <li><a class="dropdown-item" href="#">Call</a></li>
+                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>  
     </body>
     </html>
