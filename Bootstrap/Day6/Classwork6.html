@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+    <h2 class="text-center mb-4">Feedback Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea class="form-control" id="feedback" rows="4" placeholder="Enter your feedback" required></textarea>
+    </div>
+    <div class="form-group">
+  <label for="sel1">How did you find our site?</label>
+  <select class="form-control" id="sel1">
+    <option value="disabled selected">Choose an option</option>
+    <option>Search Engine</option>
+    <option>Social Media </option>
+    <option>Friends</option>
+    <option>Other</option>
+  </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Satisfaction level (1 to 5)</label><br>
+      <input type="radio" name="rate"> 1
+      <input type="radio" name="rate"> 2
+      <input type="radio" name="rate"> 3
+      <input type="radio" name="rate"> 4
+      <input type="radio" name="rate"> 5
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</body>
+</html>
