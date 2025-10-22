@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Grid</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+    .thegrid {
+      background-color: #e9ecef;
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+      .sidebar {
+        position: fixed;
+        top: 56px; /* below navbar */
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        overflow-y: auto;
+      }
+      .content-area {
+        margin-left: 200px;
+        padding: 20px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+      }
+      .content-area {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Project Grid</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <span class="navbar-text text-light">Logged in as Ares</span>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="margin-top:56px;">
+    <div class="row no-gutters">
+      <div class="col-md-2 p-0 mt-3">
+                <div class="bg-light ml-2 mr-2">
+            <nav class="nav flex-column">
+                <h6 class="text-muted mt-3 px-2">SIDEBAR</h6>
+                <a class="nav-link bg-primary text-white d-block w-100 m-0" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                
+                <h6 class="text-muted px-2 mt-3">SIDEBAR</h6>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                
+                <h6 class="text-muted px-2 mt-3">SIDEBAR</h6>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+            </nav>
+            </div>
+        </div>
+
+      <!-- Main content -->
+      <div class="col-md-8 content-area">
+        <!-- Hero section -->
+        <div class="thegrid">
+          <h1>The Grid!</h1>
+          <p>
+            The Grid is a digital world inside a computer system. It’s like a virtual city made of light, data, and programs that act like people. Instead of humans, you have programs living there — they drive light cycles, fight in arenas, and follow commands from users (humans).
+          </p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#learnMoreModal">Learn more »</button>
+        </div>
+
+        <!-- Card grid -->
+        <div class="row">
+          <div class="col-md-4 mb-4" >
+            <h3>Heading</h3>
+            <p>The Grid, a digital frontier. I tried to picture clusters of information as they moved through the computer... What did they look like? Ships, motorcycles? Were the circuits like freeways?I kept dreaming of a world I thought I’d never see.
+and then—one day… I got in.</p>
+            <a href="#" class="btn btn-light btn-sm sha">View details »</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3>Heading</h3>
+            <p>The Grid, a digital frontier. I tried to picture clusters of information as they moved through the computer... What did they look like? Ships, motorcycles? Were the circuits like freeways?I kept dreaming of a world I thought I’d never see.
+and then—one day… I got in.</p>
+            <a href="#" class="btn btn-secondary btn-sm">View details »</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3>Heading</h3>
+            <p>The Grid, a digital frontier. I tried to picture clusters of information as they moved through the computer... What did they look like? Ships, motorcycles? Were the circuits like freeways?I kept dreaming of a world I thought I’d never see.
+and then—one day… I got in.</p>
+            <a href="#" class="btn btn-secondary btn-sm">View details »</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3>Heading</h3>
+           <p>The Grid, a digital frontier. I tried to picture clusters of information as they moved through the computer... What did they look like? Ships, motorcycles? Were the circuits like freeways?I kept dreaming of a world I thought I’d never see.
+and then—one day… I got in.</p>
+            <a href="#" class="btn btn-secondary btn-sm">View details »</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3>Heading</h3>
+            <p>The Grid, a digital frontier. I tried to picture clusters of information as they moved through the computer... What did they look like? Ships, motorcycles? Were the circuits like freeways?I kept dreaming of a world I thought I’d never see.
+and then—one day… I got in.</p>
+            <a href="#" class="btn btn-secondary btn-sm">View details »</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h3>Heading</h3>
+           <p>The Grid, a digital frontier. I tried to picture clusters of information as they moved through the computer... What did they look like? Ships, motorcycles? Were the circuits like freeways?I kept dreaming of a world I thought I’d never see.
+and then—one day… I got in.</p>
+            <a href="#" class="btn btn-secondary btn-sm">View details »</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="learnMoreModal" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="learnMoreModalLabel">Learn More</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This modal pops up when you click "Learn more". You can place additional information, forms, or links here.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
